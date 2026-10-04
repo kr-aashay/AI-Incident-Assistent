@@ -1,0 +1,7 @@
+# terraform.tfvars.example — fill in and copy to terraform.tfvars (git-ignored).
+# Implementation added in Phase 8.
+region              = "us-east-1"
+cluster_name        = "incident-assistant"
+monthly_budget_usd  = 20
+budget_email        = "you@example.com"
+github_repo         = "OWNER/ai-incident-assistant"

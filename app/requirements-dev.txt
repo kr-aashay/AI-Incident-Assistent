@@ -1,0 +1,5 @@
+# Direct development & testing dependencies — pinned in Phase 2 via pip freeze
+pytest==9.1.1
+pytest-cov==7.1.0
+respx==0.23.1
+ruff==0.16.10

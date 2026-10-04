@@ -1,0 +1,4 @@
+# .github/workflows/terraform.yaml — implementation added in Phase 7.
+name: terraform
+on: {}
+jobs: {}

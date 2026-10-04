@@ -1,0 +1,4 @@
+# scripts/kind-config.yaml — implementation added in Phase 5.
+# Port mappings: 8000 (app), 3000 (grafana). No 5432 exposed (correction #6).
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4

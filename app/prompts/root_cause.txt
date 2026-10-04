@@ -1,0 +1,1 @@
+# root_cause.txt — prompt template added in Phase 2.

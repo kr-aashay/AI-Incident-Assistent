@@ -1,0 +1,4 @@
+# Versions pinned in Phase 3.
+fastapi
+uvicorn[standard]
+prometheus-client

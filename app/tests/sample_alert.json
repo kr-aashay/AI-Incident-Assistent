@@ -1,0 +1,43 @@
+{
+  "version": "4",
+  "groupKey": "{}:{alertname=\"PodCrashLooping\"}",
+  "truncatedAlerts": 0,
+  "status": "firing",
+  "receiver": "incident-assistant",
+  "groupLabels": {
+    "alertname": "PodCrashLooping"
+  },
+  "commonLabels": {
+    "alertname": "PodCrashLooping",
+    "namespace": "incident-assistant",
+    "pod": "demo-app-6d8f7b9c4-xk9p2",
+    "severity": "critical",
+    "route": "incident-assistant"
+  },
+  "commonAnnotations": {
+    "summary": "Pod demo-app-6d8f7b9c4-xk9p2 is crash looping",
+    "description": "Pod demo-app-6d8f7b9c4-xk9p2 in namespace incident-assistant has been restarting 5 times in the last 15 minutes."
+  },
+  "externalURL": "http://alertmanager.monitoring.svc:9093",
+  "alerts": [
+    {
+      "status": "firing",
+      "labels": {
+        "alertname": "PodCrashLooping",
+        "namespace": "incident-assistant",
+        "pod": "demo-app-6d8f7b9c4-xk9p2",
+        "container": "demo-app",
+        "severity": "critical",
+        "route": "incident-assistant"
+      },
+      "annotations": {
+        "summary": "Pod demo-app-6d8f7b9c4-xk9p2 is crash looping",
+        "description": "Pod demo-app-6d8f7b9c4-xk9p2 in namespace incident-assistant has been restarting 5 times in the last 15 minutes."
+      },
+      "startsAt": "2024-01-15T10:30:00.000Z",
+      "endsAt": "0001-01-01T00:00:00.000Z",
+      "generatorURL": "http://prometheus.monitoring.svc:9090/graph?g0.expr=increase(kube_pod_container_status_restarts_total%7Bnamespace%3D%22incident-assistant%22%7D%5B15m%5D)%20%3E%203\u0026g0.tab=1",
+      "fingerprint": "abc123def456789a"
+    }
+  ]
+}

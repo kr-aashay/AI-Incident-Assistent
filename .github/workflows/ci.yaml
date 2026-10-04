@@ -1,0 +1,4 @@
+# .github/workflows/ci.yaml — implementation added in Phase 7.
+name: ci
+on: {}
+jobs: {}

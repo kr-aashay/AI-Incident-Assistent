@@ -1,0 +1,28 @@
+repos:
+  # Ruff: fast Python linter and formatter.
+  # Revision pinned in Phase 2 via: pre-commit autoupdate
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.10
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  # Standard pre-commit hooks.
+  # Revision pinned in Phase 2 via: pre-commit autoupdate
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+        args: [--allow-multiple-documents]  # supports multi-doc YAML (correction #4)
+      - id: check-merge-conflict
+      - id: detect-private-key
+
+  # Gitleaks: secret scanner.
+  # Revision pinned in Phase 2 via: pre-commit autoupdate
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
